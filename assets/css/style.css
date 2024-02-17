@@ -1,0 +1,431 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    width: 100%;
+    height: 50px;
+    line-height: 46px;
+    background: #865e08;
+    position: fixed;
+    box-sizing: border-box;
+    top: -50px;
+    z-index: 100;
+    transition: .2s ease;
+}
+ul.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+li.nav-item {
+    flex: 1;
+    box-sizing: border-box;
+    padding-bottom: 4px;
+}
+li.nav-item:hover {
+    border-bottom: 4px solid #354d0f;
+    padding: 0;
+}
+a.nav-link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #EEE;
+    text-transform: uppercase;
+    transition: .5s ease;
+}
+a.nav-link:hover {
+    background: #40A0F2;
+    font-weight: 300;
+    font-size: 1em;
+}
+/* -------- Home ------------ */
+#home {
+    position: relative;
+    height: 100vh;
+}
+#home .bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#home .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(90%) contrast(120%);
+}
+#home .container {
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+#home h1 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #EEE;
+    margin: 0;
+}
+#home h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+#home p {
+    color: #EEE;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+/* -------- presentation ------------ */
+#presentation {
+    background: #131416;
+    padding: 20px 10px;
+}
+#presentation .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+#presentation .cards:hover .card:not(:hover) {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+#presentation .card {
+    flex: 1;
+    height: 250px;
+    position: relative;
+}
+#presentation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    filter: brightness(90%) contrast(120%);
+    transition: all 1s ease;
+}
+#presentation .card:hover img {
+    transform: scale(1.05,1.05);
+    filter: brightness(.75) saturate(1.2) contrast(.85);
+}
+#presentation .card:hover .content {
+    opacity: 1;
+    transition: all 1s ease;
+}
+#presentation .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#presentation h4 {
+    position: absolute;
+    top: 10px;
+    color: rgba(255, 255, 255, 0.52);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0;
+}
+#presentation a.btn {
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Arial;
+    box-sizing: border-box;
+    background: rgba(66, 59, 42, 0.685);
+    color: rgba(255, 255, 255, 0.52);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#presentation a.btn:hover {
+    background: rgba(95, 73, 21, 0.938);
+}
+/* -------- cycle ------------ */
+#cycle {
+    background: #131416;
+    padding: 20px 0;
+}
+#cycle span {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: #EEE;
+}
+#cycle .partCycle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+#cycle .illustration {
+    position: relative;
+    max-width: 500px;
+    min-width: 370px;
+    transition: all .8s ease;
+    height: 200px;
+    margin: 0 auto;
+}
+#cycle .explain {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+    transition: all .8s ease;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+#cycle .round {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #EEE;
+}
+#cycle .leftCenter {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+#cycle .rightCenter {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+#cycle .center {
+    width: calc(100% - 200px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#cycle .arrow {
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+}
+#cycle .txt {
+    left: 50%;
+    transform: translateY(-50%);
+}
+#cycle .top {
+    position: absolute;
+    top: -30px;
+}
+#cycle .bottom {
+    position: absolute;
+    bottom: -55px;
+}
+#cycle .arrowNormal {
+    position: absolute;
+    top: -20px;
+    border-top: 1px solid #EEE;
+}
+#cycle .arrowInverse {
+    position: absolute;
+    bottom: -20px;
+    border-bottom: 1px solid #EEE;
+}
+#cycle .toLeft {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    transform: rotate(20deg);
+}
+#cycle .toRight {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    transform: rotate(15deg);
+}
+#cycle > h1 {
+    color: #FFF;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+#cycle h4 {
+    color: #a8a8a8;
+    font-size: 1.5rem;
+    text-decoration: underline double;
+    padding: 5px 0;
+    margin: 0;
+}
+#cycle p {
+    color: #a8a8a8;
+    font-family: cursive, fantasy, sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 5px 0 5px 0;
+    margin: 0;
+}
+/* -------- contact ------------ */
+#contact {
+    background: #131416;
+    color: #EEE;
+    padding: 20px;
+}
+#contact input{
+    display: block;
+    outline: none;
+}
+#contact textarea {
+    display: block;
+    resize: none;
+    outline: none;
+}
+#contact h1 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+#contact p {
+    font-family: Arial;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px 0;
+}
+#contact label {
+    display: block;
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+#contact input {
+    background: #865e08;
+    color: #EEE;
+    border: none;
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    padding: 10px 15px;
+    margin: 0 auto 8px auto;
+    outline: none;
+}
+#contact input[type="submit"] {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 0;
+    transition: all 1s ease;
+}
+#contact input:focus,
+#contact textarea:focus {
+    background: #354d0f;
+}
+#contact input[type="submit"]:focus {
+    background: #865e08;
+}
+#contact input[type="submit"]:hover {
+    background: #354d0f;
+}
+#contact textarea {
+    background: #865e08;
+    color: #EEE;
+    border: none;
+    width: calc(100% - 50px);
+    height: 100px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 0 auto 5px auto;
+    outline: none;
+    resize: none;
+}
+#contact .form-controls {
+    position: relative;
+}
+#contact .showError {
+    font-family: sans-serif;
+    letter-spacing: 1;
+    position: absolute;
+    right: 30px;
+    padding: 0;
+    margin: 0;
+}
+#contact hr {
+    display: inline-block;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    margin: 0;
+}
+#contact span.or {
+    width: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px 0;
+}
+#contact .reseauSociaux {
+    display: block;
+    text-align: center;
+}
+#contact .reseauSociaux a {
+    display: inline-block;
+    font-size: 2em;
+    color: #EEE;
+    background: #580521;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+@media (min-width: 1000px) {
+    #presentation .cards {
+        gap: 15px;
+    }
+    #presentation .card {
+        flex: 1;
+        min-height: 300px;
+    }
+}
+@media (max-width: 850px) {
+    #presentation .cards {
+        gap: 10px;
+    }
+    #presentation .card {
+        flex: 49%;
+        height: 400px;
+    }
+    #cycle .partCycle {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    #presentation .card {
+        flex: 99%;
+        height: 500px;
+    }
+}
+@media (max-width: 370px) {
+    #cycle .illustration {
+        display: none;
+    }
+}

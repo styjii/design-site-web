@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    
+    <!-- project -->
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/config.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#presentation" class="nav-link">presentation</a></li>
+            <li class="nav-item"><a href="#cycle" class="nav-link">cycle</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="bg-image"><img src="media/background/img1.jpg" alt="Fond"></div>
+            <div class="container">
+                <h1>La nature</h1>
+                <h4>Pourquoi nous besoins de la nature ?</h4>
+                <p>Tous les hommes ont besoins de la nature. Car le nature nous donne du beauté, et aussi elle procure des airs plus propre pour l'Humanitaire depuis des années. Alors sans la nature, nous ne pouvons pas vivre. Et ce pour cela q'on à besoin de la nature.</p>
+            </div>
+        </section>
+        <section id="presentation">
+            <div class="cards">
+                <!-- card A -->
+                <div class="card">
+                    <img src="media/picture/nat1.jpg" alt="desert">
+                    <div class="content">
+                        <h4>La nature par le desert</h4>
+                        <a href="#" class="btn">Voir</a>
+                    </div>
+                </div>
+                <!-- card B -->
+                <div class="card">
+                    <img src="media/picture/nat2.jpg" alt="mer">
+                    <div class="content">
+                        <h4>La nature par la mer</h4>
+                        <a href="#" class="btn">Voir</a>
+                    </div>
+                </div>
+                <!-- card C -->
+                <div class="card">
+                    <img src="media/picture/nat3.jpg" alt="vide">
+                    <div class="content">
+                        <h4>La nature par la vide</h4>
+                        <a href="#" class="btn">Voir</a>
+                    </div>
+                </div>
+                <!-- card D -->
+                <div class="card">
+                    <img src="media/picture/nat1.jpg" alt="compaigne">
+                    <div class="content">
+                        <h4>La nature dans la compaigne</h4>
+                        <a href="#" class="btn">Voir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cycle">
+            <h1>Les cycle de la nature</h1>
+            <div class="main">
+                <div class="partCycle">
+                    <div class="illustration">
+                        <span class="round leftCenter">Arbre</span>
+                        <span class="round rightCenter">Air</span>
+                        <span class="firstIndex center">
+                            <span class="txt top">O<sub>2</sub></span>
+                            <span class="arrow arrowNormal">
+                                <span class="toRight">&#62;</span>
+                            </span>
+                        </span>
+                        <span class="secondIndex center">
+                            <span class="txt bottom">CO<sub>2</sub></span>
+                            <span class="arrow arrowInverse">
+                                <span class="toLeft">&#60;</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="explain">
+                        <h4>L'arbre et l'air</h4>
+                        <p>
+                            Comme vous le voyer sur cette image l'arbre provoque
+                            de l'aire <em>O<sub>2</sub></em> et obsurbe de la <em>CO<sub>2</sub></em>.
+                            Mais ce comportement de ces être végetaux sont reste le jour
+                            seulement. Car la nuit il fait de l'iverse
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Sugges une idée</h1>
+            <p>Si vous avez une idée proposé apropos de la nature, je suis ravis de recevoir votre idée. Alors n'hesite pas de m'ecrire ce que vous recent et d'envoyer</p>
+            <form class="form-controls">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <span class="showError"></span>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <span class="showError"></span>
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject">
+                <span class="showError"></span>
+
+                <label for="message">Proposition</label>
+                <textarea name="messge" id="message"></textarea>
+                <span class="showError"></span>
+
+                <input type="submit" value="Envoyer le proposition" name="request">
+
+                <hr><span class="or">Or</span><hr>
+                
+                <span class="reseauSociaux">
+                    <a href="facebook.com"><i class="bi-facebook"></i></a>
+                    <a href="github.com"><i class="bi-github"></i></a>
+                    <a href="gmail.com"><i class="bi-google"></i></a>
+                </span>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
